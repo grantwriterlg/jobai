@@ -29,7 +29,7 @@
     h2 {
       color: #004aad;
     }
-    .pay-button {
+    .pay-button, button {
       display: inline-block;
       background: #0070f3;
       color: white;
@@ -38,6 +38,8 @@
       text-decoration: none;
       font-weight: 600;
       margin-top: 1rem;
+      border: none;
+      cursor: pointer;
     }
     select, input {
       width: 100%;
@@ -50,14 +52,13 @@
     label {
       font-weight: 600;
     }
-    button {
-      background: #0070f3;
-      color: white;
-      padding: 0.7rem 1.5rem;
+    hr {
+      margin: 2rem 0;
       border: none;
-      border-radius: 5px;
-      font-weight: 600;
-      cursor: pointer;
+      border-top: 1px solid #ddd;
+    }
+    ul {
+      padding-left: 1.2rem;
     }
   </style>
 </head>
@@ -89,10 +90,19 @@
       <li>July 25 (Friday)</li>
       <li>July 26 (Saturday)</li>
     </ul>
+  </section>
 
-    <a href="https://buy.stripe.com/aFacN6gGr7MH43kaxjgQE02" class="pay-button" target="_blank">Pay $100 Now</a>
+  <section>
+    <h2>Register for a Workshop</h2>
+    <p><strong>Step 1:</strong> Pay $100 using the secure Stripe link below.</p>
+    <a href="https://buy.stripe.com/aFacN6gGr7MH43kaxjgQE02" class="pay-button" target="_blank">
+      Pay $100 (opens in new tab)
+    </a>
+    <p><em>After payment, return to this page and complete your registration below.</em></p>
 
-    <p><em>After payment, please register your session below.</em></p>
+    <hr>
+
+    <p><strong>Step 2:</strong> Complete the registration form below to reserve your spot.</p>
 
     <form action="https://formspree.io/f/mjkrbklb" method="POST">
       <label>Your Name:</label>
@@ -125,7 +135,7 @@
       <button type="submit">Submit Registration</button>
     </form>
 
-    <p><strong>Zoom link will be emailed 1 day before your session.</strong></p>
+    <p><strong>Note:</strong> Zoom link will be emailed 1 day before your session.</p>
   </section>
 
   <section>
@@ -134,7 +144,7 @@
       <li>Create AI-powered resumes</li>
       <li>Write custom cover letters using ChatGPT</li>
       <li>Improve your job search with AI tools</li>
-      <li>Practice interview techniques</li>
+      <li>Practice interview techniques with feedback</li>
     </ul>
   </section>
 
